@@ -1,0 +1,86 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Aquisition_board1 Aquisition_board2 Aquisition_board3 Aquisition_board4 Aquisition_board5 Aquisition_board6 Aquisition_board7 Aquisition_board8
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0002 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0003 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0004 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0005 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0006 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0007 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0008 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0009 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1 Front: 8 Aquisition_board1
+ SG_ APPS : 0|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ hydraulic_brake_pressure : 8|8@1+ (1,0) [0|0] "bar" Vector__XXX
+ SG_ bots : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2 F_left: 4 Aquisition_board2
+ SG_ wheel_speed : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ tire_temp : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_disc_temp : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ wheel_angle : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 3 F_right: 4 Aquisition_board3
+ SG_ wheel_speed : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ tire_temp : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_disc_temp : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ wheel_angle : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 4 data_box: 8 Aquisition_board4
+ SG_ suspension_level_left : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ suspension_level_right : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 5 Side_panel: 8 Aquisition_board7
+ SG_ Shutdown_circuit : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mission_select : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ignition : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 6 Rear_pressure: 8 Aquisition_board8
+ SG_ Hydrauli_brake_pressure : 0|16@1+ (1,0) [0|0] "bar" Vector__XXX
+ SG_ NTC1 : 16|8@1+ (10,0) [0|0] "º" Vector__XXX
+ SG_ NTC2 : 24|8@1+ (10,0) [0|0] "º" Vector__XXX
+ SG_ NTC3 : 32|8@1+ (10,0) [0|0] "º" Vector__XXX
+ SG_ NTC4 : 40|8@1+ (10,0) [0|0] "º" Vector__XXX
+ SG_ NTC5 : 48|8@1+ (10,0) [0|0] "º" Vector__XXX
+ SG_ NTC6 : 56|8@1+ (10,0) [0|0] "º" Vector__XXX
+
+
+
+
