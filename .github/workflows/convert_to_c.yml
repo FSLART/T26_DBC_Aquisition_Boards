@@ -3,7 +3,7 @@ name: Generate C code and Export DBC to Excel
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   generate_and_export:
