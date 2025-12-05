@@ -34,8 +34,7 @@ jobs:
             cantools generate_c_source "$dbcfile" --output "$outdir"
           done
 
-      - name: Export DBC to Excel
-        run: python export_dbc_to_excel.py
+
 
       - name: Commit and push generated files if changed
         run: |
