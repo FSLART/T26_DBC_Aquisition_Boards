@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard DBC Completo</title>
+<style>
+body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin:20px; background:#f4f6f8; color:#333; }
+h1 { color: #1f4e79; }
+.tab { overflow:hidden; border-bottom:2px solid #ccc; background-color:#fff; margin-bottom:20px; }
+.tab button { background-color:inherit; float:left; border:none; outline:none; cursor:pointer; padding:10px 20px; transition:0.3s; font-size:16px; }
+.tab button:hover { background-color:#ddd; }
+.tab button.active { background-color:#1f78b4; color:white; }
+.tabcontent { display:none; padding:10px 0; border-top:none; }
+table { width:100%; border-collapse: collapse; margin-bottom: 20px; background-color:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+th, td { border:1px solid #ccc; padding:8px; text-align:left; }
+th { background-color:#e2eaf1; }
+.added { background-color:#d4ffd4; }
+.removed { background-color:#ffd4d4; }
+.changed { background-color:#fff0b3; }
+.code { font-family: monospace; }
+.collapsible { background-color:#1f78b4; color:white; cursor:pointer; padding:8px; border:none; text-align:left; outline:none; font-size:14px; margin-top:10px; border-radius:5px; }
+.active_collapsible, .collapsible:hover { background-color:#145a86; }
+.content { padding:0 15px; display:none; overflow:hidden; background-color:#f9f9f9; border-left:3px solid #1f78b4; margin-bottom:10px;}
+.summary { margin-bottom:20px; padding:10px; background:#eaf1fb; border-left:5px solid #1f78b4;}
+</style>
+</head>
+<body>
+<h1>Dashboard DBC Completo</h1>
+
+<h2>📁 Ficheiros DBC</h2>
+<p>Adicionados: Nenhum</p>
+<p>Removidos: Nenhum</p>
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+
+</div>
+
+
+<div id="aquisition_boards.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 8, Mensagens: 7, Sinais: 26
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('Aquisition_board1', None)</li>
+  
+    <li>node('Aquisition_board2', None)</li>
+  
+    <li>node('Aquisition_board3', None)</li>
+  
+    <li>node('Aquisition_board4', None)</li>
+  
+    <li>node('Aquisition_board5', None)</li>
+  
+    <li>node('Aquisition_board6', None)</li>
+  
+    <li>node('Aquisition_board7', None)</li>
+  
+    <li>node('Aquisition_board8', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="autonomous_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 8, Mensagens: 4, Sinais: 15
+    <br>Mensagens Adicionadas: 1, Removidas: 1, Alteradas: 0
+    <br>Sinais Adicionados: 1, Removidos: 3, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('JETSON', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('ACU', None)</li>
+  
+    <li>node('RES', None)</li>
+  
+    <li>node('DYN_F', None)</li>
+  
+    <li>node('DYN_R', None)</li>
+  
+    <li>node('FSG_DATA_LOGGER', None)</li>
+  
+    <li>node('AK10_9', 'Atuador direção')</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1</td>
+      <td>dir</td>
+      <td>8</td>
+      <td>None</td>
+      <td>dir</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Removidas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="removed">
+      <td>4</td>
+      <td>dir_actu_position_speed</td>
+      <td>8</td>
+      <td>None</td>
+      <td>position, speed, NewSignal_0001</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1</td><td>dir</td></tr>
+  
+  </table>
+  
+
+  <h2>🟥 Sinais Removidos</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>4</td><td>speed</td></tr>
+  
+    <tr class="removed"><td>4</td><td>NewSignal_0001</td></tr>
+  
+    <tr class="removed"><td>4</td><td>position</td></tr>
+  
+  </table>
+  
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent=document.getElementsByClassName("tabcontent");
+  for(i=0;i<tabcontent.length;i++){ tabcontent[i].style.display="none"; }
+  tablinks=document.getElementsByClassName("tablinks");
+  for(i=0;i<tablinks.length;i++){ tablinks[i].className=tablinks[i].className.replace(" active",""); }
+  document.getElementById(tabName).style.display="block";
+  evt.currentTarget.className+=" active";
+}
+document.getElementsByClassName("tablinks")[0].click();
+
+var coll=document.getElementsByClassName("collapsible");
+for(var i=0;i<coll.length;i++){
+  coll[i].addEventListener("click",function(){
+    this.classList.toggle("active_collapsible");
+    var content=this.nextElementSibling;
+    content.style.display=(content.style.display==="block")?"none":"block";
+  });
+}
+</script>
+</body>
+</html>
