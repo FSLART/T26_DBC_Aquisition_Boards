@@ -1,4 +1,4 @@
-name: Generate & Deploy DBC Dashboard
+name: Generate DBC Dashboard
 
 on:
   push:
@@ -6,13 +6,15 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  generate-and-commit:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Fazer checkout do repositório
+      # 1️⃣ Checkout do repositório
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # permite push
 
       # 2️⃣ Configurar Python
       - name: Set up Python
@@ -20,26 +22,21 @@ jobs:
         with:
           python-version: "3.11"
 
-      # 3️⃣ Instalar dependências diretamente (sem requirements.txt)
+      # 3️⃣ Instalar dependências
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install cantools Jinja2
 
-      # 4️⃣ Executar o script reports.py
+      # 4️⃣ Gerar relatório
       - name: Generate DBC dashboard
         run: python reports.py
 
-      # 5️⃣ Configurar GitHub Pages
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v4
-
-      # 6️⃣ Upload do conteúdo da pasta reports para Pages
-      - name: Upload dashboard to Pages
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: reports
-
-      # 7️⃣ Publicar no GitHub Pages
-      - name: Deploy to Pages
-        uses: actions/deploy-pages@v1
+      # 5️⃣ Commit e push do relatório gerado
+      - name: Commit and push dashboard
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add reports/dashboard.html old/
+          git commit -m "Update DBC dashboard [skip ci]" || echo "No changes to commit"
+          git push origin main
