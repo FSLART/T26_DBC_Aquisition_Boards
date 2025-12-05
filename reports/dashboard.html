@@ -34,12 +34,59 @@ th { background-color:#e2eaf1; }
 
 <div class="tab">
 
-  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
-
   <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
 
 </div>
 
+
+<div id="autonomous_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 8, Mensagens: 4, Sinais: 15
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('JETSON', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('ACU', None)</li>
+  
+    <li>node('RES', None)</li>
+  
+    <li>node('DYN_F', None)</li>
+  
+    <li>node('DYN_R', None)</li>
+  
+    <li>node('FSG_DATA_LOGGER', None)</li>
+  
+    <li>node('AK10_9', 'Atuador direção')</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
 
 <div id="aquisition_boards.dbc" class="tabcontent">
   <div class="summary">
@@ -83,97 +130,6 @@ th { background-color:#e2eaf1; }
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="autonomous_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 8, Mensagens: 4, Sinais: 15
-    <br>Mensagens Adicionadas: 1, Removidas: 1, Alteradas: 0
-    <br>Sinais Adicionados: 1, Removidos: 3, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('JETSON', None)</li>
-  
-    <li>node('VCU', None)</li>
-  
-    <li>node('ACU', None)</li>
-  
-    <li>node('RES', None)</li>
-  
-    <li>node('DYN_F', None)</li>
-  
-    <li>node('DYN_R', None)</li>
-  
-    <li>node('FSG_DATA_LOGGER', None)</li>
-  
-    <li>node('AK10_9', 'Atuador direção')</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="added">
-      <td>1</td>
-      <td>dir</td>
-      <td>8</td>
-      <td>None</td>
-      <td>dir</td>
-    </tr>
-  
-  </table>
-  
-
-  <h2>📨 Mensagens Removidas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="removed">
-      <td>4</td>
-      <td>dir_actu_position_speed</td>
-      <td>8</td>
-      <td>None</td>
-      <td>position, speed, NewSignal_0001</td>
-    </tr>
-  
-  </table>
-  
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>1</td><td>dir</td></tr>
-  
-  </table>
-  
-
-  <h2>🟥 Sinais Removidos</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="removed"><td>4</td><td>speed</td></tr>
-  
-    <tr class="removed"><td>4</td><td>NewSignal_0001</td></tr>
-  
-    <tr class="removed"><td>4</td><td>position</td></tr>
-  
-  </table>
-  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
