@@ -2,7 +2,7 @@ name: Generate DBC Dashboard
 
 on:
   workflow_run:
-    workflows: ["First Workflow"]   # nome exato do workflow anterior
+    workflows: ["Export DBC to Excel and Commit"]   # nome exato do workflow anterior
     types:
       - completed
 
