@@ -114,7 +114,7 @@ CM_ SG_ 3221225472 EBS_Pressure_Rear "(null)";
 CM_ SG_ 3221225472 EBS_Pressure_Front "Perdu gay";
 CM_ SG_ 3221225472 STATE "Regulations";
 CM_ SG_ 81 ACU_STATE "";
-CM_ BO_ 2147494248 "change to extended ";
+CM_ BO_ 2147494248 "";
 CM_ SG_ 2147494248 Current "The current is of int16 type, with values -6000 to 6000 representing -60 to 60 A";
 VAL_ 81 IGN 0 "OFF" 1 "ON" ;
 VAL_ 81 ASMS 0 "OFF" 1 "ON" ;
