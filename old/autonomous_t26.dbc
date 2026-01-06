@@ -98,14 +98,14 @@ BO_ 81 ACU: 8 ACU
  SG_ Mission_select : 6|3@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147494248 dir_actuator_feedback: 8 AK10_9
- SG_ Position : 0|16@1+ (10,0) [-32000|32000] "º" Vector__XXX
- SG_ Speed : 16|16@1+ (10,0) [-32000|32000] "RPM" Vector__XXX
- SG_ Current : 32|16@1+ (100,0) [0|0] "A" Vector__XXX
- SG_ Temperature : 48|8@1+ (1,0) [-20|127] "º" Vector__XXX
- SG_ Error_codes : 56|8@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Position : 7|16@0+ (10,0) [-32000|32000] "º" Vector__XXX
+ SG_ Speed : 23|16@0+ (10,0) [-32000|32000] "RPM" Vector__XXX
+ SG_ Current : 39|16@0+ (100,0) [0|0] "A" Vector__XXX
+ SG_ Temperature : 55|8@0+ (1,0) [-20|127] "º" Vector__XXX
+ SG_ Error_codes : 63|8@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 2147484776 dir_act_possition_loop: 8 JETSON
- SG_ RPM : 0|32@1- (10000,0) [0|0] "RPM" Vector__XXX
+ SG_ RPM : 7|32@0- (10000,0) [0|0] "RPM" Vector__XXX
 
 
 
