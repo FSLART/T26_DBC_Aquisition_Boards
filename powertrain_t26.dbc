@@ -961,6 +961,8 @@ BO_ 1220 HV500_MinMaxDcCurrent: 8 DTI
 
 BO_ 1795 Master_MSC_ID_2: 8 AMS
  SG_ master_runtime : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ overall_maximum_voltage : 16|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ overall_maximum_temperature : 32|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
 
 
 
