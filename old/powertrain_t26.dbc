@@ -959,6 +959,9 @@ BO_ 1220 HV500_MinMaxDcCurrent: 8 DTI
  SG_ MinDcCurrent : 39|16@0- (0.1,0) [-850|0] "Adc"  AMS,VCU,HOST
  SG_ AvailableMinDcCurrent : 55|16@0- (0.1,0) [-850|0] "Adc"  AMS,VCU,HOST
 
+BO_ 1795 Master_MSC_ID_2: 8 AMS
+ SG_ master_runtime : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+
 
 
 CM_ BU_ HOST "The commnad sender
@@ -1046,6 +1049,7 @@ CM_ SG_ 1220 MaxDcCurrent "Max DC current configured with the DTI CAN tool.";
 CM_ SG_ 1220 AvailableMaxDcCurrent "Available max DC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
 CM_ SG_ 1220 MinDcCurrent "Min DC current configured with the DTI CAN tool.";
 CM_ SG_ 1220 AvailableMinDcCurrent "Available min DC current. This value affected by the limitation functions (igbt temp, motortemp etc.) Defines how much current available from the configured one.";
+CM_ SG_ 1795 master_runtime "AMS Master Runtime in ms";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 262 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
