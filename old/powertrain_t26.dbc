@@ -82,7 +82,7 @@ BO_ 259 Slave_01_Temperature_ID_1: 8 AMS
  SG_ temperature_value_3 : 32|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_value_4 : 48|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
 
-BO_ 260 Slave_01_Temperature_ID_2: 8 AMS
+BO_ 452 Slave_01_Temperature_ID_2: 8 AMS
  SG_ temperature_value_5 : 0|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_value_6 : 16|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_maximum : 32|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
@@ -965,7 +965,7 @@ CM_ BU_ HOST "The commnad sender
 ";
 CM_ BU_ ISABELLE "";
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
-CM_ BO_ 260 "Node ID: 4 (decimal)";
+CM_ BO_ 452 "";
 CM_ SG_ 262 module_open_wire "";
 CM_ SG_ 269 module_open_wire "";
 CM_ SG_ 276 module_open_wire "";
@@ -1009,6 +1009,8 @@ CM_ BO_ 100 "Node ID: 4 (decimal)";
 CM_ BO_ 132 "Node ID: 4 (decimal)";
 CM_ BO_ 164 "Node ID: 4 (decimal)";
 CM_ BO_ 196 "Node ID: 4 (decimal)";
+CM_ BO_ 260 "Node ID: 4 (decimal)
+";
 CM_ BO_ 292 "Node ID: 4 (decimal)";
 CM_ SG_ 292 CMD_MaxAcBrakeCurrent "Minimum AC current value depends on inverter configuration!";
 CM_ BO_ 324 "Node ID: 4 (decimal)";
