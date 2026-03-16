@@ -139,9 +139,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 5, Mensagens: 118, Sinais: 673
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 5, Mensagens: 118, Sinais: 674
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 1
+    <br>Sinais Adicionados: 1, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -167,10 +167,33 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">1793 : Master_MSC_ID_1</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['mcu_vref', 'mcu_temperature', 'ams_current_draw', 'master_firmware_version', 'master_fan_pwm', 'master_state']</td>
+        <td class="code">['mcu_vref', 'mcu_temperature', 'ams_current_draw', 'master_firmware_version', 'adbms_pec_error', 'master_fan_pwm', 'master_state']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1793</td><td>adbms_pec_error</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
