@@ -969,7 +969,7 @@ BO_ 1795 Master_MSC_ID_2: 8 AMS
 BO_ 1796 Master_MSC_ID_3: 8 AMS
  SG_ overall_maximum_voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
  SG_ overall_maximum_temperature : 16|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
- SG_ overall_minimum_voltage : 32|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ overall_minimum_voltage : 32|16@1+ (0.001,0) [0|0] " V" Vector__XXX
  SG_ overall_minimum_temperature : 48|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
 
 
