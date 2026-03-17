@@ -54,6 +54,9 @@ VAL_TABLE_ VtID_Response 149 "ARTICLE_NUMBER" 148 "SERIAL NUMBER" 147 "SW_VERSIO
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ NewSignal_0003 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ NewSignal_0008 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0001 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ overall_maximum_voltage : 16|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ overall_maximum_temperature : 32|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
 
 BO_ 131 Start_PreCharge: 1 VCU
  SG_ Precharge_Request : 0|1@0+ (1,0) [0|0] "ON/OFF" Vector__XXX
@@ -962,8 +965,12 @@ BO_ 1220 HV500_MinMaxDcCurrent: 8 DTI
 
 BO_ 1795 Master_MSC_ID_2: 8 AMS
  SG_ master_runtime : 0|16@1+ (1,0) [0|0] "s" Vector__XXX
- SG_ overall_maximum_voltage : 16|16@1+ (0.001,0) [0|0] " V" Vector__XXX
- SG_ overall_maximum_temperature : 32|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
+
+BO_ 1796 Master_MSC_ID_3: 8 AMS
+ SG_ overall_maximum_voltage : 0|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ overall_maximum_temperature : 16|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
+ SG_ overall_minimum_voltage : 32|16@1+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ overall_minimum_temperature : 48|16@1+ (0.01,0) [0|0] "ºC" Vector__XXX
 
 
 
