@@ -125,7 +125,7 @@ BO_ 265 Slave_02_Voltage_ID_3: 8 AMS
  SG_ cell_voltage_12 : 48|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
 
 BO_ 266 Slave_02_Temperature_ID_1: 8 AMS
- SG_ temperature_value_1 : 0|16@1+ (0.01,0) [0|0] " ºC"  VCU,HOST
+ SG_ temperature_value_1 : 0|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_value_2 : 16|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_value_3 : 32|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
  SG_ temperature_value_4 : 48|16@1+ (0.01,0) [0|0] "ºC"  VCU,HOST
@@ -1079,7 +1079,7 @@ VAL_ 269 module_undervoltage 0 "No Fault" 1 "Overvoltage Detected" ;
 VAL_ 269 module_under_over_identifier 0 "No Fault" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "Termistor 1" 14 "Termistor 2" 15 "Termistor 3" 16 "Termistor 4" 17 "Termistor 5" 18 "Termistor 6" ;
 VAL_ 276 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
 VAL_ 283 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 290 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 290 module_open_wire 0 "No fault detected" 1 "Cell/open-wire /voltage diagnostic fault" ;
 VAL_ 297 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
 VAL_ 304 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
 VAL_ 311 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;

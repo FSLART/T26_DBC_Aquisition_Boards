@@ -141,7 +141,7 @@ th { background-color:#e2eaf1; }
   <div class="summary">
     <b>Resumo:</b> Nós: 5, Mensagens: 119, Sinais: 682
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 1
   </div>
 
   <h2>🟦 Nós</h2>
@@ -176,7 +176,23 @@ th { background-color:#e2eaf1; }
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
+  
+    
+    <button type="button" class="collapsible">290 : module_open_wire</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>choices</td>
+        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
+        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire /voltage diagnostic fault')])</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 </div>
 
 
