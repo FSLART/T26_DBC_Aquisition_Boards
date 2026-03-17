@@ -139,9 +139,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 5, Mensagens: 118, Sinais: 674
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 5, Mensagens: 119, Sinais: 676
+    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 1
+    <br>Sinais Adicionados: 4, Removidos: 2, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -161,19 +161,70 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1796</td>
+      <td>Master_MSC_ID_3</td>
+      <td>8</td>
+      <td>None</td>
+      <td>overall_maximum_voltage, overall_maximum_temperature, overall_minimum_voltage, overall_minimum_temperature</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">1795 : Master_MSC_ID_2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['master_runtime', 'overall_maximum_voltage', 'overall_maximum_temperature']</td>
+        <td class="code">['master_runtime']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1796</td><td>overall_minimum_voltage</td></tr>
+  
+    <tr class="added"><td>1796</td><td>overall_maximum_temperature</td></tr>
+  
+    <tr class="added"><td>1796</td><td>overall_minimum_temperature</td></tr>
+  
+    <tr class="added"><td>1796</td><td>overall_maximum_voltage</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1795</td><td>overall_maximum_temperature</td></tr>
+  
+    <tr class="removed"><td>1795</td><td>overall_maximum_voltage</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
