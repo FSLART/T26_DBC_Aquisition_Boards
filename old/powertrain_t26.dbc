@@ -986,7 +986,7 @@ CM_ SG_ 332 module_open_wire "";
 CM_ SG_ 339 module_open_wire "";
 CM_ SG_ 1793 master_state "Master State Machine
 ";
-CM_ SG_ 1793 adbms_pec_error "ADBMS PEC Error (Error on comms)";
+CM_ SG_ 1793 adbms_pec_error "ADBMS PEC Error  (Error on comms)";
 CM_ SG_ 1794 precharge_state "Pecharge State Machine";
 CM_ BO_ 1028 "Node ID: 4 (decimal)";
 CM_ SG_ 1028 Actual_ERPM "Electrical RPM
