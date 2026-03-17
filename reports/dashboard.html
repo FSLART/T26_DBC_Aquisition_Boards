@@ -139,9 +139,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 5, Mensagens: 119, Sinais: 676
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 5, Mensagens: 119, Sinais: 682
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 2
+    <br>Sinais Adicionados: 6, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -167,10 +167,57 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">262 : Slave_01_MSC_ID_2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature']</td>
+        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature', 'module_overvoltage', 'module_undervoltage', 'module_under_over_identifier']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">269 : Slave_02_MSC_ID_2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature']</td>
+        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature', 'module_overvoltage', 'module_undervoltage', 'module_under_over_identifier']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>262</td><td>module_under_over_identifier</td></tr>
+  
+    <tr class="added"><td>262</td><td>module_undervoltage</td></tr>
+  
+    <tr class="added"><td>269</td><td>module_under_over_identifier</td></tr>
+  
+    <tr class="added"><td>269</td><td>module_undervoltage</td></tr>
+  
+    <tr class="added"><td>262</td><td>module_overvoltage</td></tr>
+  
+    <tr class="added"><td>269</td><td>module_overvoltage</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
