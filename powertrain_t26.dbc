@@ -102,6 +102,9 @@ BO_ 262 Slave_01_MSC_ID_2: 8 AMS
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "ºC"  VCU,HOST
+ SG_ module_overvoltage : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ module_undervoltage : 57|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ module_under_over_identifier : 58|5@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 263 Slave_02_Voltage_ID_1: 8 AMS
  SG_ cell_voltage_1 : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
@@ -144,6 +147,9 @@ BO_ 269 Slave_02_MSC_ID_2: 8 AMS
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "ºC"  VCU,HOST
+ SG_ module_overvoltage : 56|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ module_undervoltage : 57|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ module_under_over_identifier : 58|5@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 270 Slave_03_Voltage_ID_1: 8 AMS
  SG_ cell_voltage_1 : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
@@ -1064,7 +1070,13 @@ CM_ SG_ 1795 master_runtime "AMS Master Runtime in seconds";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 262 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 262 module_overvoltage 0 "No Fault" 1 "Overvoltage Detected" ;
+VAL_ 262 module_undervoltage 0 "No Fault" 1 "Undervoltage Detected" ;
+VAL_ 262 module_under_over_identifier 0 "No Fault" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "Termistor 1" 14 "Termistor 2" 15 "Termistor 3" 16 "Termistor 4" 17 "Termistor 5" 18 "Termistor 6" ;
 VAL_ 269 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 269 module_overvoltage 0 "No Fault" 1 "Overvoltage Detected" ;
+VAL_ 269 module_undervoltage 0 "No Fault" 1 "Overvoltage Detected" ;
+VAL_ 269 module_under_over_identifier 0 "No Fault" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "Termistor 1" 14 "Termistor 2" 15 "Termistor 3" 16 "Termistor 4" 17 "Termistor 5" 18 "Termistor 6" ;
 VAL_ 276 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
 VAL_ 283 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
 VAL_ 290 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
