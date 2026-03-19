@@ -978,6 +978,9 @@ BO_ 1796 Master_MSC_ID_3: 8 AMS
  SG_ overall_minimum_voltage : 32|16@1+ (0.001,0) [0|0] " V" Vector__XXX
  SG_ overall_minimum_temperature : 48|16@1+ (0.01,0) [0|0] "degC" Vector__XXX
 
+BO_ 132 Start_Balancing: 8 HOST
+ SG_ Balancing_Request : 0|1@1+ (1,0) [0|1] "ON/OFF" Vector__XXX
+
 
 
 CM_ BU_ HOST "The commnad sender
